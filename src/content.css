@@ -1,0 +1,3 @@
+.product-item.isPromoted, .rt-product-card.isPromoted {
+    display: none;
+}

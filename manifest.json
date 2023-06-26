@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Ruten Taiwan Promotion Blocker",
+    "version": "0.0.1",
+    "applications": {
+        "gecko": {
+            "id": "{97ff78e3-cc85-48e4-bb3e-8669e164132f}"
+        }
+    },
+    "description": "",
+    "content_scripts": [
+        {
+            "run_at": "document_start",
+            "matches": [ "<all_urls>" ],
+            "js": ["dist/content.js"],
+            "css": ["dist/content.css"]
+        }
+    ],
+    "permissions": [ "https://www.ruten.com.tw/*" ]
+}
